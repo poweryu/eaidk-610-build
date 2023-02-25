@@ -139,9 +139,6 @@ function do_main_configuration() {
 		gitclone)
 			GITHUB_SOURCE='https://gitclone.com/github.com'
 			;;
-		ghproxy)
-			GITHUB_SOURCE='https://ghproxy.com/github.com'
-			;;
 		*)
 			GITHUB_SOURCE='https://github.com'
 			;;
@@ -151,7 +148,6 @@ function do_main_configuration() {
 	[[ -z $OFFSET ]] && OFFSET=4 # offset to 1st partition (we use 4MiB boundaries by default)
 	ARCH=armhf
 	KERNEL_IMAGE_TYPE=zImage
-	CAN_BUILD_STRETCH=yes
 	ATF_COMPILE=yes
 	[[ -z $CRYPTROOT_SSH_UNLOCK ]] && CRYPTROOT_SSH_UNLOCK=yes
 	[[ -z $CRYPTROOT_SSH_UNLOCK_PORT ]] && CRYPTROOT_SSH_UNLOCK_PORT=2022
@@ -225,7 +221,7 @@ POST_FAMILY_CONFIG
 	[[ -z $ATFPATCHDIR ]] && ATFPATCHDIR="atf-$LINUXFAMILY"
 	[[ -z $KERNELPATCHDIR ]] && KERNELPATCHDIR="$LINUXFAMILY-$BRANCH"
 
-	if [[ "$RELEASE" =~ ^(focal|jammy|kinetic)$ ]]; then
+	if [[ "$RELEASE" =~ ^(focal|jammy|kinetic|lunar)$ ]]; then
 		DISTRIBUTION="Ubuntu"
 	else
 		DISTRIBUTION="Debian"
@@ -430,7 +426,7 @@ POST_AGGREGATE_PACKAGES
 
 		## Build script directories
 		Build directory is located on:
-		$(findmnt -o TARGET,SOURCE,FSTYPE,AVAIL -T "${SRC}")
+		$(findmnt --output TARGET,SOURCE,FSTYPE,AVAIL --target "${SRC}" --uniq)
 
 		Build directory permissions:
 		$(getfacl -p "${SRC}")

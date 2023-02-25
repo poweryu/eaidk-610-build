@@ -1,2 +1,2 @@
-verbosity=7
+verbosity=1
 bootlogo=false
