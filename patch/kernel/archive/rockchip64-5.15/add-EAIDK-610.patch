@@ -1,0 +1,49 @@
+From a15ca48b6451b7af27323749f35d0f9929f83f73 Mon Sep 17 00:00:00 2001
+From: Andy Yan <andyshrk@163.com>
+Date: Sat, 9 Jul 2022 18:30:01 +0800
+Subject: [PATCH] dt-bindings: arm: rockchip: Add EAIDK-610
+
+EAIDK-610 is a rk3399 based board from OPEN AI LAB
+and popularly used by university students.
+
+Specification:
+- Rockchip RK3399
+- LPDDR3 4GB
+- TF sd scard slot
+- eMMC
+- AP6255 for WiFi + BT
+- Gigabit ethernet
+- HDMI out
+- 40 pin header
+- USB 2.0 x 2
+- USB 3.0 x 1
+- USB 3.0 Type-C x 1
+- 12V DC Power supply
+
+Signed-off-by: Andy Yan <andyshrk@163.com>
+Acked-by: Rob Herring <robh@kernel.org>
+Link: https://lore.kernel.org/r/20220709103001.2753992-1-andyshrk@163.com
+Signed-off-by: Heiko Stuebner <heiko@sntech.de>
+---
+ Documentation/devicetree/bindings/arm/rockchip.yaml | 5 +++++
+ 1 file changed, 5 insertions(+)
+
+diff --git a/Documentation/devicetree/bindings/arm/rockchip.yaml b/Documentation/devicetree/bindings/arm/rockchip.yaml
+index 7811ba64149c..adc06522d219 100644
+--- a/Documentation/devicetree/bindings/arm/rockchip.yaml
++++ b/Documentation/devicetree/bindings/arm/rockchip.yaml
+@@ -470,6 +470,11 @@ properties:
+           - const: netxeon,r89
+           - const: rockchip,rk3288
+ 
++      - description: OPEN AI LAB EAIDK-610
++        items:
++          - const: openailab,eaidk-610
++          - const: rockchip,rk3399
++
+       - description: Orange Pi RK3399 board
+         items:
+           - const: rockchip,rk3399-orangepi
+-- 
+2.34.1
+

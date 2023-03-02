@@ -139,6 +139,9 @@ function do_main_configuration() {
 		gitclone)
 			GITHUB_SOURCE='https://gitclone.com/github.com'
 			;;
+		ghproxy)
+			GITHUB_SOURCE='https://ghproxy.com/github.com'
+			;;
 		*)
 			GITHUB_SOURCE='https://github.com'
 			;;

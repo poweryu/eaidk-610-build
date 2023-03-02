@@ -1,0 +1,31 @@
+From 467dcf345613a779efc3af1dce88a576079666e6 Mon Sep 17 00:00:00 2001
+From: Andy Yan <andyshrk@163.com>
+Date: Sat, 9 Jul 2022 18:29:42 +0800
+Subject: [PATCH] dt-bindings: vendor-prefixes: Add OPEN AI LAB
+
+Add vendor prefixes for OPEN AI LAB.
+
+Signed-off-by: Andy Yan <andyshrk@163.com>
+Acked-by: Rob Herring <robh@kernel.org>
+Link: https://lore.kernel.org/r/20220709102942.2753939-1-andyshrk@163.com
+Signed-off-by: Heiko Stuebner <heiko@sntech.de>
+---
+ Documentation/devicetree/bindings/vendor-prefixes.yaml | 2 ++
+ 1 file changed, 2 insertions(+)
+
+diff --git a/Documentation/devicetree/bindings/vendor-prefixes.yaml b/Documentation/devicetree/bindings/vendor-prefixes.yaml
+index 2f0151e9f6be..dfaff2487b04 100644
+--- a/Documentation/devicetree/bindings/vendor-prefixes.yaml
++++ b/Documentation/devicetree/bindings/vendor-prefixes.yaml
+@@ -925,6 +925,8 @@ patternProperties:
+     description: On Tat Industrial Company
+   "^opalkelly,.*":
+     description: Opal Kelly Incorporated
++  "^openailab,.*":
++    description: openailab.com
+   "^opencores,.*":
+     description: OpenCores.org
+   "^openembed,.*":
+-- 
+2.34.1
+
