@@ -22,7 +22,7 @@ jobs:
           BRANCH=current \
           RELEASE=bullseye KERNEL_ONLY=no \
           KERNEL_CONFIGURE=no USE_MAINLINE_GOOGLE_MIRROR=yes BUILD_DESKTOP=yes  \
-          DESKTOP_ENVIRONMENT="xfce" RELEASE="focal" DESKTOP_ENVIRONMENT_CONFIG_NAME=config_base DESKTOP_APPGROUPS_SELECTED="browsers 3dsupport"  COMPRESS_OUTPUTIMAGE=yes  
+          DESKTOP_ENVIRONMENT="xfce" DESKTOP_ENVIRONMENT_CONFIG_NAME=config_base DESKTOP_APPGROUPS_SELECTED="browsers 3dsupport"  COMPRESS_OUTPUTIMAGE=yes  
           
 
           ls output/images/
