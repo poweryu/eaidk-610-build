@@ -19,11 +19,16 @@ jobs:
           ls ./patch/misc/
           ./compile.sh \
           BOARD=eaidk-610 \
-          BRANCH=current \
-          RELEASE=bullseye KERNEL_ONLY=no \
-          KERNEL_CONFIGURE=no USE_MAINLINE_GOOGLE_MIRROR=yes BUILD_DESKTOP=yes  \
-          DESKTOP_ENVIRONMENT="xfce" DESKTOP_ENVIRONMENT_CONFIG_NAME=config_base DESKTOP_APPGROUPS_SELECTED="browsers 3dsupport"  COMPRESS_OUTPUTIMAGE=yes  
-          
+          BRANCH=edge \
+          BUILD_DESKTOP=yes \
+          DESKTOP_ENVIRONMENT="xfce" \
+          DESKTOP_ENVIRONMENT_CONFIG_NAME=config_base \
+          DESKTOP_APPGROUPS_SELECTED="browsers 3dsupport" \
+          COMPRESS_OUTPUTIMAGE=yes \
+          RELEASE=bullseye \
+          KERNEL_ONLY=no \
+          DESKTOP_ENVIRONMENT_CONFIG_NAME=config_base \
+          KERNEL_CONFIGURE=no
 
           ls output/images/
 
