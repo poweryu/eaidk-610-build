@@ -25,7 +25,7 @@ jobs:
           DESKTOP_ENVIRONMENT_CONFIG_NAME=config_base \
           DESKTOP_APPGROUPS_SELECTED="browsers 3dsupport" \
           COMPRESS_OUTPUTIMAGE=yes \
-          RELEASE=bullseye \
+          RELEASE=jammy \
           KERNEL_ONLY=no \
           DESKTOP_ENVIRONMENT_CONFIG_NAME=config_base \
           KERNEL_CONFIGURE=no
