@@ -6,8 +6,8 @@ KERNEL_TARGET="current,edge"
 FULL_DESKTOP="yes"
 BOOT_LOGO="desktop"
 BOOT_FDT_FILE="rockchip/rk3399-eaidk-610.dtb"
-MAINLINE_MIRROR=tuna
-UBOOT_MIRROR=gitee
-GITHUB_MIRROR=ghproxy
+#MAINLINE_MIRROR=tuna
+#UBOOT_MIRROR=gitee
+#GITHUB_MIRROR=ghproxy
 # or china
-DOWNLOAD_MIRROR=bfsu
+#DOWNLOAD_MIRROR=bfsu
