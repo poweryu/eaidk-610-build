@@ -17,6 +17,7 @@ jobs:
         shell: bash
         run: |
           ls ./patch/misc/
+          cat ./config/boards/eaidk-610.csc
           ./compile.sh \
           BOARD=eaidk-610 \
           BRANCH=edge \
