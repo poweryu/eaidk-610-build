@@ -22,7 +22,7 @@ jobs:
           BOARD=eaidk-610 \
           BRANCH=edge \
           BUILD_DESKTOP=yes \
-          DESKTOP_ENVIRONMENT="xfce" \
+          DESKTOP_ENVIRONMENT="gnome" \
           DESKTOP_ENVIRONMENT_CONFIG_NAME=config_base \
           DESKTOP_APPGROUPS_SELECTED="browsers 3dsupport" \
           COMPRESS_OUTPUTIMAGE=yes \
